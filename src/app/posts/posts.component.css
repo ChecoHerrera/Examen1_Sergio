@@ -1,4 +1,3 @@
-
 /*Clear Fix*/
 .cf:before,
 .cf:after {
@@ -17,9 +16,7 @@
 }
 
 /*Clear Fix*/
-
-.left{ float: left}
-.wrapper{padding: 2%; margin: 0 auto;  background-color: #eeeeee;}
-.header{margin-bottom: 2%;}
-.bees{ width: 39%; padding-right: 1%;}
-.beesActivity{ width: 60%;}
+*{color: #0000ff;}
+.left{ float: left;}
+.mainCont{border: 2px solid #0000ff; padding: 2%; background-color: #d7eeff;}
+input{ background-color: #0000ff; border: 0px; width: 100%; height: 40px; font-size: 20px; color: #ffffff}

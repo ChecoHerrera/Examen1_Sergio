@@ -1,0 +1,4 @@
+.mainContent{border: 2px solid #ff931e; padding: 1%; margin-bottom: 1%; margin-top: 1%}
+h1, p{padding: 0; margin: 0;}
+.textleft{ text-align: right;}
+*{color: #ff931e}

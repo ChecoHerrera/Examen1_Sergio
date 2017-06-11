@@ -1,3 +1,14 @@
-<h1>
-  {{title}}hola
-</h1>
+<div class="wrapper">
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <div class="main cf">
+    <div class="bees left">
+      <app-bees [bees]='bees' (sendBee)='receivedBee($event)' (sendContentoShow)='receivedContentoShow($event)'></app-bees>
+    </div>
+    <div class="beesActivity left">
+      <app-bee-activity [selectedBee]='bee' [selectedCont]='cont'></app-bee-activity>
+    </div>
+
+  </div>
+</div>

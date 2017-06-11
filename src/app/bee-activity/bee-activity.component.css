@@ -1,0 +1,30 @@
+
+/*Clear Fix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*Clear Fix*/
+.main{border: 2px solid #000000; padding: 1%; height:600px; overflow: scroll; background-color: #ffffff;}
+.left{ float: left}
+.posts{ width: 43%; padding-right: 1%;}
+.albums{ width: 28%}
+.todos{ width: 27%; padding-left: 1%;}
+
+@media only screen and (max-width: 800px){
+    .posts{ width: 98%; padding: 1%;}
+.albums{ width: 98%; padding: 1%;}
+.todos{width: 98%; padding: 1%;}
+}

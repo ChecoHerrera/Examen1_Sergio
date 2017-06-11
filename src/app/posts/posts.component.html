@@ -1,0 +1,9 @@
+<div class="mainCont">
+  <h1>{{bee.name}}'s Posts</h1>
+  <div *ngFor='let post of bee.posts'>
+    <app-post [post]='post'></app-post>
+  </div>
+
+
+  <input type="button" value="New Post" />
+</div>

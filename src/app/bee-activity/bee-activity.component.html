@@ -1,0 +1,11 @@
+<div class="main cf">
+  <div class="posts left" *ngIf="selectedCont == '1' || selectedCont == '0'">
+    <app-posts [bee]='selectedBee'></app-posts>
+  </div>
+  <div class="albums left" *ngIf="selectedCont == '2' || selectedCont == '0'">
+    <app-album></app-album>
+  </div>
+  <div class="todos left" *ngIf="selectedCont == '3' || selectedCont == '0'">
+    <app-todos></app-todos>
+  </div>
+</div>

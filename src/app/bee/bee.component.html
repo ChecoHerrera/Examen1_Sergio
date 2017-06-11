@@ -1,0 +1,27 @@
+<div class="mainCont cf">
+  <div class="image left"><img [src]='bee.avatarUrl' width="100%" height="auto" /></div>
+  <div class="info left">
+    <h1>{{bee.name}}</h1>
+    <label>{{bee.username}}</label>
+    <label>{{bee.email}}</label>
+    <label>{{bee.phone}}</label>
+    <label>{{bee.address.city}}</label>
+    <div class="cf">
+      <label class="left text12">post:{{bee.posts.length}}</label>
+      <label class="left text12">photos:{{bee.album.photos.length}}</label>
+      <label class="left text12">todos:{{bee.todos.length}}</label>
+
+    </div>
+  </div>
+  <div class="ctas cf">
+    <input class="left" type="button" value="Posts" (click)='allinfo(bee,1)' />
+    <input class="left" type="button" value="Album" (click)='allinfo(bee,2)' />
+    <input class="left" type="button" value="Todo" (click)='allinfo(bee,3)' />
+  </div>
+  <div class="cta">
+    <input type="button" value="View {{bee.name}}'s Info" (click)='allinfo(bee,0)' />
+  </div>
+
+
+
+</div>

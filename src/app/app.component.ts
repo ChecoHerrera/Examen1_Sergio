@@ -20,10 +20,12 @@ import { Comment } from './models/comment';
 export class AppComponent {
 
   private bees: Bee[] = [];
-
+  private bee;
+  private cont;
   constructor(private http: Http) {
     this.loadFromJson();
   }
+
 
   loadData(usersUrl: string, postsUrl: string, albumsUrl: string, photosUrl: string, todosUrl: string, commentsUrl: string) {
     this.http.get(usersUrl).map(res => res.json()).subscribe((data) => {
@@ -95,16 +97,17 @@ export class AppComponent {
       });
 
       //1. Agregar tu información a este usuario.
-      let company = new Company('ludusy', 'A better world for everyone', 'Dream does not cost a dine');
-      let address = new Address('Rea Ave', 'Mountain View Valley', 'Cartago', '1000', new Geo
+      let company = new Company('Checo', 'Be the Best', 'Just walk to the front');
+      let address = new Address('San Martin', 'Siquirres', 'Limon', 'CR', new Geo
         ('0.000001', '0.000002'));
-      let me = new Bee(11, 'Esteban Padilla', 'epadilla', 'epadilla@ucenfotec.ac.cr', '8706-6660', 'www.estebanpadilla.com', address
-        , company, 'https://pbs.twimg.com/profile_images/823203313709678593/FoLVmrhK_400x400.jpg');
+      let me = new Bee(11, 'Sergio', 'Herrera', 'sherrerad@ucenfotec.ac.cr', '83398109', 'https://www.facebook.com/sergio.hdss?lst=100001494142294%3A100001494142294%3A1497220417', address
+        , company, 'http://www.ctmanager.ninja/img/imgCoders/SergioHerrera.png');
       let album = new Album(1000, 11, 'Estebans Photos');
       me.setAlbum(album);
       this.bees.push(me);
 
       console.log(this.bees);
+
     });
 
   }
@@ -127,4 +130,15 @@ export class AppComponent {
       '../assets/data/todos.json',
       '../assets/data/comments.json');
   }
+
+  receivedBee(pBee) {
+    this.bee = pBee;
+    console.log(pBee);
+  };
+
+   receivedContentoShow(pCont) {
+    this.cont = pCont;
+  };
+
+ 
 }

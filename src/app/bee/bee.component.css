@@ -1,0 +1,34 @@
+/*Clear Fix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*Clear Fix*/
+*{color: #ed1c24;}
+.left{ float: left;}
+.mainCont{border: 2px solid #ed1c24; padding: 2%; margin-bottom: 2%; background-color: #faeff0;}
+h1{margin: 0; padding: 0;}
+.image{ width: 18%; padding: 1%;}
+.info{ width: 56%; padding: 1%;}
+.info label{ display: block;}
+.text12{ font-size: 12px; margin-right: 2%;}
+.ctas{ width: 98%; padding:1%; display:none; }
+.ctas input{ width: 30%; border-radius: 5px; background-color: #ed1c24; border: 0px !important; color: #ffffff; text-align: center; height: 40px; font-size: 20px; margin: 4% 1%;}
+.cta input { width: 96%; border-radius: 5px; background-color: #ed1c24; border: 0px !important; color: #ffffff; text-align: center; height: 40px; font-size: 20px; margin: 2%;}
+
+@media only screen and (max-width: 800px){
+	.cta{ display: none;}
+    .ctas{ display: block;}
+}

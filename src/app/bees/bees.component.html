@@ -1,0 +1,7 @@
+<div class="mainCont">
+  <h1>Bees</h1>
+  <div *ngFor='let bee of bees'>
+    <app-bee [bee]='bee' (sendBee)='receivedBee($event)' (sendContentoShow)='receivedContentoShow($event)'></app-bee>
+  </div>
+
+</div>
