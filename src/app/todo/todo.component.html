@@ -1,3 +1,4 @@
-<p>
-  todo works!
-</p>
+<div class="mainContent" *ngIf="todo.completed">
+  <p>{{todo.title}}</p>
+  <input type="button" value="Complete" (click)='completeTask()' />
+</div>

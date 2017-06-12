@@ -1,8 +1,11 @@
 <div class="mainCont">
   <h1>{{bee.name}}'s Albun</h1>
   <h2>{{bee.album.title}}</h2>
-  <div *ngFor='let photo of bee.album.photos'>
-    <app-photo [photo]='photo'></app-photo>
+  <div class="albunCont">
+    <div *ngFor='let photo of bee.album.photos'>
+      <app-photo [photo]='photo'></app-photo>
+    </div>
+    <div class="spacer"></div>
   </div>
 
 </div>
