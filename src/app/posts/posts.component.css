@@ -18,5 +18,5 @@
 /*Clear Fix*/
 *{color: #0000ff;}
 .left{ float: left;}
-.mainCont{border: 2px solid #0000ff; padding: 2%; background-color: #d7eeff;}
+.mainCont{border: 2px solid #0000ff; padding: 2%; background-color: #d7eeff; overflow: scroll; height: 600px;}
 input{ background-color: #0000ff; border: 0px; width: 100%; height: 40px; font-size: 20px; color: #ffffff}

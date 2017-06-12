@@ -17,7 +17,7 @@
 }
 
 /*Clear Fix*/
-.main{border: 2px solid #000000; padding: 1%; height:600px; overflow: scroll; background-color: #ffffff;}
+.main{border: 2px solid #000000; padding: 1%; background-color: #ffffff; height: 610px; overflow: hidden;}
 .left{ float: left}
 .posts{ width: 43%; padding-right: 1%;}
 .albums{ width: 28%}

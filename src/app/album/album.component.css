@@ -1,0 +1,4 @@
+.mainCont{border: 2px solid #ed1c24; padding: 2%; background-color: #ffe5e6; overflow: scroll; height: 600px;}
+*{color: #ed1c24;}
+h1, h2{ margin: 0; padding: 0px;}
+h2{ margin-bottom: 2%;}

@@ -102,10 +102,11 @@ export class AppComponent {
         ('0.000001', '0.000002'));
       let me = new Bee(11, 'Sergio', 'Herrera', 'sherrerad@ucenfotec.ac.cr', '83398109', 'https://www.facebook.com/sergio.hdss?lst=100001494142294%3A100001494142294%3A1497220417', address
         , company, 'http://www.ctmanager.ninja/img/imgCoders/SergioHerrera.png');
-      let album = new Album(1000, 11, 'Estebans Photos');
+      let album = new Album(1000, 11, 'Vacaciones Photos');
       me.setAlbum(album);
       this.bees.push(me);
-
+      this.bee = this.bees[10];
+      this.cont = "0";
       console.log(this.bees);
 
     });
@@ -136,9 +137,9 @@ export class AppComponent {
     console.log(pBee);
   };
 
-   receivedContentoShow(pCont) {
+  receivedContentoShow(pCont) {
     this.cont = pCont;
   };
 
- 
+
 }

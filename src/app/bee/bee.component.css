@@ -25,10 +25,11 @@ h1{margin: 0; padding: 0;}
 .info label{ display: block;}
 .text12{ font-size: 12px; margin-right: 2%;}
 .ctas{ width: 98%; padding:1%; display:none; }
-.ctas input{ width: 30%; border-radius: 5px; background-color: #ed1c24; border: 0px !important; color: #ffffff; text-align: center; height: 40px; font-size: 20px; margin: 4% 1%;}
+.ctas input{ width: 100%; border-radius: 5px; background-color: #ed1c24; border: 0px !important; color: #ffffff; text-align: center; height: 40px; font-size: 20px; margin: 4% 1%;}
 .cta input { width: 96%; border-radius: 5px; background-color: #ed1c24; border: 0px !important; color: #ffffff; text-align: center; height: 40px; font-size: 20px; margin: 2%;}
 
 @media only screen and (max-width: 800px){
 	.cta{ display: none;}
     .ctas{ display: block;}
+
 }
