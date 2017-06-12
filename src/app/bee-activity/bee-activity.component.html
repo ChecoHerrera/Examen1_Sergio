@@ -1,13 +1,16 @@
 <div class="main cf">
   <div class="posts left" *ngIf="selectedCont == '1' || selectedCont == '0'">
-    <app-posts [bee]='selectedBee'></app-posts>
+    <app-posts [bee]='selectedBee' (sendContentoShow)='receivedContentoShow2($event)'></app-posts>
+    <div *ngIf="showCont2 == true">
+      <app-new-post [bee]='selectedBee' (sendContentoClose)='receivedContentoShow2($event)'></app-new-post>
+    </div>
   </div>
   <div class="albums left" *ngIf="selectedCont == '2' || selectedCont == '0'">
     <app-album [bee]='selectedBee'></app-album>
   </div>
   <div class="todos left" *ngIf="selectedCont == '3' || selectedCont == '0'">
     <app-todos [bee]='selectedBee' (sendContentoShow)='receivedContentoShow($event)'></app-todos>
-    <div *ngIf="showCont == '1'">
+    <div *ngIf="showCont == true">
       <app-new-todo [bee]='selectedBee' (sendContentoClose)='receivedContentoShow($event)'></app-new-todo>
     </div>
   </div>

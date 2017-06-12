@@ -19,7 +19,7 @@
 /*Clear Fix*/
 .main{border: 2px solid #000000; padding: 1%; background-color: #ffffff; height: 610px; overflow: hidden;}
 .left{ float: left}
-.posts{ width: 43%; padding-right: 1%;}
+.posts{ width: 43%; padding-right: 1%;position: relative;}
 .albums{ width: 28%}
 .todos{ width: 27%; padding-left: 1%; position: relative;}
 

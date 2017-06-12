@@ -103,6 +103,10 @@ export class AppComponent {
       let me = new Bee(11, 'Sergio', 'Herrera', 'sherrerad@ucenfotec.ac.cr', '83398109', 'https://www.facebook.com/sergio.hdss?lst=100001494142294%3A100001494142294%3A1497220417', address
         , company, 'http://www.ctmanager.ninja/img/imgCoders/SergioHerrera.png');
       let album = new Album(1000, 11, 'Vacaciones Photos');
+      let photos = new Photo(1000, 0, 'Vacaciones1', 'https://scontent.fsjo1-1.fna.fbcdn.net/v/t1.0-9/15978067_1348768021849656_392982637908174479_n.jpg?oh=5bf58994f11eb0ced70612c25fdb8e3b&oe=59A4BDD7', 'https://scontent.fsjo1-1.fna.fbcdn.net/v/t1.0-9/15978067_1348768021849656_392982637908174479_n.jpg?oh=5bf58994f11eb0ced70612c25fdb8e3b&oe=59A4BDD7');
+      album.addPhoto(photos);
+      photos = new Photo(1000, 1, 'Vacaciones2', 'https://scontent.fsjo1-1.fna.fbcdn.net/v/t1.0-9/15965057_1348775555182236_6116507048958330878_n.jpg?oh=bf7aa7917a85cfa4bbd2c35b436d22dd&oe=59D92AAA', 'https://scontent.fsjo1-1.fna.fbcdn.net/v/t1.0-9/15965057_1348775555182236_6116507048958330878_n.jpg?oh=bf7aa7917a85cfa4bbd2c35b436d22dd&oe=59D92AAA');
+      album.addPhoto(photos);
       me.setAlbum(album);
       this.bees.push(me);
       this.bee = this.bees[10];
