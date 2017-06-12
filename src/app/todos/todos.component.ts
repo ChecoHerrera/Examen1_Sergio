@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-todos',
@@ -7,6 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TodosComponent implements OnInit {
   @Input() bee;
+  @Output() sendContentoShow = new EventEmitter();
+
+  showCont() {
+    this.sendContentoShow.emit(true);
+  };
+
   constructor() { }
 
   ngOnInit() {

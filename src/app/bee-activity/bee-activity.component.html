@@ -6,6 +6,9 @@
     <app-album [bee]='selectedBee'></app-album>
   </div>
   <div class="todos left" *ngIf="selectedCont == '3' || selectedCont == '0'">
-    <app-todos [bee]='selectedBee'></app-todos>
+    <app-todos [bee]='selectedBee' (sendContentoShow)='receivedContentoShow($event)'></app-todos>
+    <div *ngIf="showCont == '1'">
+      <app-new-todo [bee]='selectedBee' (sendContentoClose)='receivedContentoShow($event)'></app-new-todo>
+    </div>
   </div>
 </div>

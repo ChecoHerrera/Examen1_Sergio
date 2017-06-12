@@ -7,8 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BeeActivityComponent implements OnInit {
   @Input() selectedBee;
-   @Input() selectedCont;
+  @Input() selectedCont;
+  @Input() showCont = false;
+
+  receivedContentoShow(pCont) {
+
+    this.showCont = pCont;
+
+  }
   constructor() { }
+
 
   ngOnInit() {
   }

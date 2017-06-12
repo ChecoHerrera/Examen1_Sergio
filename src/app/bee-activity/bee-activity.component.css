@@ -21,7 +21,7 @@
 .left{ float: left}
 .posts{ width: 43%; padding-right: 1%;}
 .albums{ width: 28%}
-.todos{ width: 27%; padding-left: 1%;}
+.todos{ width: 27%; padding-left: 1%; position: relative;}
 
 @media only screen and (max-width: 800px){
     .posts{ width: 98%; padding: 1%;}
