@@ -1,2 +1,7 @@
 .mainCont{border: 2px solid #93278f; padding: 2%;background-color: #fff6ff; overflow: scroll; height: 610px;}
 h1{color: #93278f;}
+
+@media only screen and (max-width: 800px){
+
+.mainCont{ height: 620px;}
+}

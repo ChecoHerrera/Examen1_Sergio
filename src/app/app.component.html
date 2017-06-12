@@ -1,13 +1,13 @@
 <div class="wrapper">
   <div class="header">
-    <app-header></app-header>
+    <app-header [myUser]='user'></app-header>
   </div>
   <div class="main cf">
     <div class="bees left">
       <app-bees [bees]='bees' (sendBee)='receivedBee($event)' (sendContentoShow)='receivedContentoShow($event)'></app-bees>
     </div>
     <div class="beesActivity left">
-      <app-bee-activity [selectedBee]='bee' [selectedCont]='cont'></app-bee-activity>
+      <app-bee-activity [selectedBee]='bee' [selectedCont]='cont' [myUser]='user'></app-bee-activity>
 
     </div>
 

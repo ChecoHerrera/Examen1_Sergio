@@ -1,6 +1,6 @@
 <div class="mainCont">
   <h1>Bees</h1>
-  <div *ngFor='let bee of bees'>
+  <div *ngFor='let bee of bees.slice().reverse()'>
     <app-bee [bee]='bee' (sendBee)='receivedBee($event)' (sendContentoShow)='receivedContentoShow($event)'></app-bee>
   </div>
 

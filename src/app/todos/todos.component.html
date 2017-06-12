@@ -1,7 +1,7 @@
 <div class="mainCont">
   <h1>{{bee.name}}'s Todos</h1>
   <div class="todoCont">
-    <div *ngFor='let todo of bee.todos'>
+    <div *ngFor='let todo of bee.todos.slice().reverse()'>
       <app-todo [todo]='todo'></app-todo>
     </div>
     <div class="spacer"></div>

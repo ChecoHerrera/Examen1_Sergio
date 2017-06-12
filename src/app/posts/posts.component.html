@@ -1,8 +1,8 @@
 <div class="mainCont">
   <h1>{{bee.name}}'s Posts</h1>
   <div class="postCont">
-    <div *ngFor='let post of bee.posts'>
-      <app-post [post]='post'></app-post>
+    <div *ngFor='let post of bee.posts.slice().reverse()'>
+      <app-post [post]='post' (sendContentoShow)='receivedContentoShow3($event)' (sendPost)='receivedPost($event)'></app-post>
     </div>
     <div class="spacer"></div>
   </div>

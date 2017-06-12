@@ -1,2 +1,4 @@
 .mainCont{ width: 96%; border: 2px solid #666666; padding: 2%; background-color: #ffffff;
 }
+p{ vertical-align: middle;}
+p img{ width: 30px; height:30px; border-radius: 30px;}

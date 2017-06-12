@@ -21,6 +21,7 @@ export class AppComponent {
 
   private bees: Bee[] = [];
   private bee;
+  private user;
   private cont;
   constructor(private http: Http) {
     this.loadFromJson();
@@ -112,6 +113,7 @@ export class AppComponent {
       this.bee = this.bees[10];
       this.cont = "0";
       console.log(this.bees);
+      this.user=this.bees[10];
 
     });
 

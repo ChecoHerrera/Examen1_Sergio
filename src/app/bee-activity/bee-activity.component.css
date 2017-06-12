@@ -19,12 +19,16 @@
 /*Clear Fix*/
 .main{border: 2px solid #000000; padding: 1%; background-color: #ffffff; height: 610px; overflow: hidden;}
 .left{ float: left}
-.posts{ width: 43%; padding-right: 1%;position: relative;}
+.posts{ width: 41%; padding-right: 1%;position: relative;}
 .albums{ width: 28%}
-.todos{ width: 27%; padding-left: 1%; position: relative;}
+.todos{ width: 29%; padding-left: 1%; position: relative;}
 
+table{ width: 100%;}
+td{text-align: left; vertical-align: top;}
 @media only screen and (max-width: 800px){
+    td{display: block;}
     .posts{ width: 98%; padding: 1%;}
 .albums{ width: 98%; padding: 1%;}
 .todos{width: 98%; padding: 1%;}
+.main{ height: 620px;}
 }

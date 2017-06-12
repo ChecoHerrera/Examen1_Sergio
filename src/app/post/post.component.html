@@ -4,9 +4,9 @@
   <h2>{{post.body}}</h2>
   <p>Comments: {{post.comments.length}}</p>
   <div class="posts">
-    <div *ngFor='let comment of post.comments'>
+    <div *ngFor='let comment of post.comments.slice().reverse()'>
       <app-comment [comment]='comment'></app-comment>
     </div>
   </div>
-  <input type="button" value="New Comment" />
+  <input type="button" value="New Comment" (click)="showCont(post)" />
 </div>
