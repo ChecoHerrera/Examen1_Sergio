@@ -1,12 +1,13 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Comment } from '../models/Comment';
+import { Comment } from '../../models/comment';
+
 @Component({
   selector: 'app-new-comment',
   templateUrl: './new-comment.component.html',
   styleUrls: ['./new-comment.component.css']
 })
 export class NewCommentComponent implements OnInit {
- @Input() bee;
+  @Input() bee;
   @Input() post;
   @Input() myUser;
   @Output() sendContentoClose = new EventEmitter();
@@ -20,13 +21,13 @@ export class NewCommentComponent implements OnInit {
 
   };
 
-  addComment(){
+  addComment() {
     var newcomment = new Comment(this.post.comments.length, this.post.id, this.myTitle, this.myBody, this.myUser.email);
-   this.post.addComment(newcomment);
-   this.sendContentoClose.emit(false);
+    this.post.addComment(newcomment);
+    this.sendContentoClose.emit(false);
   };
 
-   ontitleEnter(event) {
+  ontitleEnter(event) {
     this.myTitle = event.target.value;
   }
 

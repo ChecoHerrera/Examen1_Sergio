@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Post } from '../models/Post';
+import { Post } from '../../models/post';
 @Component({
   selector: 'app-new-post',
   templateUrl: './new-post.component.html',

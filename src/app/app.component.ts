@@ -113,7 +113,7 @@ export class AppComponent {
       this.bee = this.bees[10];
       this.cont = "0";
       console.log(this.bees);
-      this.user=this.bees[10];
+      this.user = this.bees[10];
 
     });
 
